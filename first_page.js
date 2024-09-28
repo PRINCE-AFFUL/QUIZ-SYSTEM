@@ -25,7 +25,7 @@ const correctAnswers = {
     q7: "img is for images, figure is for images with captions",
     q8: ".class",
     q9: "To define a navigation menu",
-    q10: "marginG",
+    q10: "margin",
     // Add more questions and answers
   };
   

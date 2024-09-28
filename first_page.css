@@ -1,4 +1,4 @@
-.hero {
+.count{
     position: fixed;
     top: 40%;
     left: 50%;
@@ -7,8 +7,8 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px magenta;
-    animation: hero 10s forwards; /* adjust duration */
-    font-size: 20px;
+    animation: hero 13s forwards; /* adjust duration */
+    font-size: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
     font-style: italic;
@@ -48,7 +48,12 @@
     justify-content: center;
   }
   body{
-    background-color: rgba(173, 216, 230, 0.279);
+    background-color: rgba(15, 62, 77, 0.412);
+    background-image: url(linda.jpg);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
   .question_1{
     border: 0.5px solid black;
@@ -59,17 +64,223 @@
 
   }
 
+  .container{
+    padding-bottom: 0;
+    animation: down 35s ease ;
+    transition: all 0.5s;
+ }
+ @keyframes down {
+     0%{
+         opacity: 0;
+         display: none;
+        
+     }
+     100%{
+         opacity: 1;
+         
+     }
+ }
+ .box:nth-child(6){
+     animation-delay: 7;
+ }
+ .box:nth-child(2){
+     animation-delay: 4;
+ }
+ .box:nth-child(3){
+     animation-delay: 5;
+ }
+ .box:nth-child(4){
+     animation-delay: 6;
+ }
+ .box:nth-child(5){
+     animation-delay: 7;
+ }
 
 
 
 
 
-.count{
-  font-size: 50px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  font-style: italic;
+
+
+
+
+ 
+
+  /* MEDIA QERIES */
+  @media (max-width: 480px) {
+    /* styles for small mobile devices */
+    body{
+
+
+
+    }
+    .container{
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .question_1{
+      padding: 5%;
+      
+      width: 15rem;
+    }
+
+    }
+    
+  
+  
+  
+  /* - Medium (481px - 640px): */
+  
+  @media (min-width: 481px) and (max-width: 640px) {
+    /* styles for medium mobile devices */
+    body{
+ 
+    }
+    .container{
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .question_1{
+      padding: 5%;
+      
+      width: 25rem;
+    }
+
+  }
+  
+  
+  /* - Large (641px - 768px): */
+  
+  @media (min-width: 641px) and (max-width: 768px) {
+    /* styles for large mobile devices */
+    body{
+ 
+    }
+    .container{
+      font-size: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .question_1{
+      padding: 5%;
+      
+      width: 30rem;
+    }
+  
+  }
+  
+  
+  /* Tablets
+  
+  - Small (769px - 960px): */
+  
+  @media (min-width: 769px) and (max-width: 960px) {
+    /* styles for small tablets */
+    body{
+
+    }
+
+
+  }
+  
+  
+  /* - Medium (961px - 1024px): */
+  
+  @media (min-width: 961px) and (max-width: 1024px) {
+    /* styles for medium tablets */
+    body{
+
+    }
+
+  }
+  
+  
+  /* - Large (1025px - 1280px): */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* styles for large tablets */
+    body{
+     
+    }
+    .container{
+        margin-left: 4rem;
+    }
+    .first_image{
+width: 90%;
+margin-left: 5%;
+    }
+.central_images{
+
 }
+  }
+  
+  
+  /* Desktops */
+  
+  /* - Small (1281px - 1440px): */
+  
+   @media (min-width: 1281px) and (max-width: 1440px) {
+    /* styles for small desktops */
+    body{
+   
+    }
+  
+  }
+  
+  
+  /* - Medium (1441px - 1680px): */
+  
+  @media (min-width: 1441px) and (max-width: 1680px) {
+    /* styles for medium desktops */
+   
+  }
+  
+  
+  /* - Large (1681px - 1920px): */
+  
+  @media (min-width: 1681px) and (max-width: 1920px) {
+    /* styles for large desktops */
+    body{
+     
+    }
+  }
+  
+  
+  /* - Extra Large (1921px and up): */
+  
+  @media (min-width: 1921px) {
+    /* styles for extra large desktops */
+  }
+  
+  /* 
+  Other Devices
+  
+  - Wearables (240px - 320px): */
+  
+  @media (max-width: 320px) {
+    /* styles for wearables */
+  }
+  
+  
+  /* - Gaming Consoles (720px - 1080px): */
+  
+  @media (min-width: 720px) and (max-width: 1080px) {
+    /* styles for gaming consoles */
+  }
+   
+
+
+
+
+
 
 
 
